@@ -1,0 +1,458 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>你缺失的那门计算机课 | Fisssssh-Blog</title><meta name="author" content="fisssssh"><meta name="copyright" content="fisssssh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1234567891011121314本篇博客是基于作品《你缺失的那门计算机课》进行总结和导读，旨在帮助真正意义上的电脑初学者快速上手电脑操作。本篇博客的结构将根据原作分为基础篇，软件篇和进阶篇等，并且尽力在原作本就很简洁明了的描述上进行进一步的总结与压缩。本博客起于2025&#x2F;11&#x2F;26，并将持续更新...本博客采用 CC BY-NC-SA 4.0 协议许可。您可以在 https:&#x2F;&#x2F;creati">
+<meta property="og:type" content="article">
+<meta property="og:title" content="你缺失的那门计算机课">
+<meta property="og:url" content="http://example.com/2025/11/26/%E4%BD%A0%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E9%97%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%BE/index.html">
+<meta property="og:site_name" content="Fisssssh-Blog">
+<meta property="og:description" content="1234567891011121314本篇博客是基于作品《你缺失的那门计算机课》进行总结和导读，旨在帮助真正意义上的电脑初学者快速上手电脑操作。本篇博客的结构将根据原作分为基础篇，软件篇和进阶篇等，并且尽力在原作本就很简洁明了的描述上进行进一步的总结与压缩。本博客起于2025&#x2F;11&#x2F;26，并将持续更新...本博客采用 CC BY-NC-SA 4.0 协议许可。您可以在 https:&#x2F;&#x2F;creati">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/5f5106950234ef21e6b024e25338fcf3.jpg">
+<meta property="article:published_time" content="2025-11-26T15:17:14.000Z">
+<meta property="article:modified_time" content="2025-11-26T15:17:14.000Z">
+<meta property="article:author" content="fisssssh">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/5f5106950234ef21e6b024e25338fcf3.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "你缺失的那门计算机课",
+  "url": "http://example.com/2025/11/26/%E4%BD%A0%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E9%97%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%BE/",
+  "image": "http://example.com/img/5f5106950234ef21e6b024e25338fcf3.jpg",
+  "datePublished": "2025-11-26T15:17:14.000Z",
+  "dateModified": "2025-11-26T15:17:14.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "fisssssh",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/head.jpg"><link rel="canonical" href="http://example.com/2025/11/26/%E4%BD%A0%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E9%97%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%BE/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '你缺失的那门计算机课',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/img/3f7be0b24671e6f36245047988e9fd18.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/5f5106950234ef21e6b024e25338fcf3.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Fisssssh-Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">你缺失的那门计算机课</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">你缺失的那门计算机课</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-26T15:17:14.000Z" title="发表于 2025-11-26 23:17:14">2025-11-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-26T15:17:14.000Z" title="更新于 2025-11-26 23:17:14">2025-11-26</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">6.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">本篇博客是基于作品《你缺失的那门计算机课》进行总结和导读，旨在帮助真正意义上的电脑初学者快速上手电脑操作。本篇博客的结构将根据原作分为基础篇，软件篇和进阶篇等，并且尽力在原作本就很简洁明了的描述上进行进一步的总结与压缩。</span><br><span class="line"></span><br><span class="line">本博客起于2025/11/26，并将持续更新...</span><br><span class="line"></span><br><span class="line">本博客采用 CC BY-NC-SA 4.0 协议许可。</span><br><span class="line">您可以在 https://creativecommons.org/licenses/by/4.0/deed.zh-hans 查看该许可的</span><br><span class="line">详细信息。</span><br><span class="line">原作：</span><br><span class="line">《你缺失的那门计算机课》网页版</span><br><span class="line">作者：Hans Wan 和 Windy Deng</span><br><span class="line">网址：https://www.criwits.top/missing</span><br><span class="line">以 CC BY-NC-SA 4.0 协议许可</span><br><span class="line"></span><br><span class="line">如有任何侵权，请联系本人立即删除！！！</span><br></pre></td></tr></table></figure>
+
+<h1 id="序"><a href="#序" class="headerlink" title="序"></a><strong>序</strong></h1><p>​       在数字时代，熟练使用电脑是一项必备的生活技能，但现实中许多人却严重缺乏这方面的“常识”。尽管智能手机普及，电脑因其复杂性和不可替代性，其使用技能依然至关重要。</p>
+<p>​        希望读者能以轻松、好奇的心态，通过本书掌握必要的计算机常识，从而在数字化的浪潮中立于不败之地，并自信地面对未来的技术发展。</p>
+<h1 id="第一部分-基础篇"><a href="#第一部分-基础篇" class="headerlink" title="第一部分 基础篇"></a><strong>第一部分</strong> <strong>基础篇</strong></h1><p>​      基础但十分重要的电脑基本操作，包含一些电脑的组成（ps：这确实很重要，不至于买电脑的时候被坑，也能在电脑出问题的时候进行简单的处理），文件管理，安装卸载软件以及一些简单的电脑维护知识。</p>
+<h2 id="第零章-一些约定与预备知识"><a href="#第零章-一些约定与预备知识" class="headerlink" title="第零章  一些约定与预备知识"></a>第零章  一些约定与预备知识</h2><h3 id="0-1-文中的标记符号"><a href="#0-1-文中的标记符号" class="headerlink" title="0.1 文中的标记符号"></a>0.1 文中的标记符号</h3><p>使用方头括号“【】”来标记所有屏幕上字面显示的选项,例如，“右键【此电脑】→【属性】”的意思是，右键桌面上的【此电脑】图标，然后在弹出的菜单中点击【属性】。</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126212119211.png" alt="image-20251126212119211"></h3><h3 id="0-2-快捷键的注意事项"><a href="#0-2-快捷键的注意事项" class="headerlink" title="0.2 快捷键的注意事项"></a>0.2 快捷键的注意事项</h3><p>快捷键的按法并不是“同时按下所有的键”，而是“依展示次序按下各键不松手，最后一起松开”。</p>
+<h3 id="0-3-F1-12功能按键"><a href="#0-3-F1-12功能按键" class="headerlink" title="0.3  F1-12功能按键"></a>0.3  F1-12功能按键</h3><p>键盘的最顶端的F1-12的按键不能用来输入文字，而是用来组合出各种功能，笔记本电脑的键盘上，这 12 个按键在它们原本的功能之外，增加了一层“扩展功能”。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126212453085.png" alt="image-20251126212453085"></p>
+<p>例如：F1 键画有静音的符号，因此 F1 键的扩展功能就是静音，用法就是键盘上的 Fn 键+F1，以此类推…</p>
+<h3 id="0-4-“重启”不是关机再开机"><a href="#0-4-“重启”不是关机再开机" class="headerlink" title="0.4 “重启”不是关机再开机"></a>0.4 “重启”不是关机再开机</h3><p>​      “重启”过程并不等价于“先关机再开机”的过程。若在我们在文中提及了“重启”操作，请务必选择开始菜单中的“重启”选项重启电脑，而非将电脑关机后再手动打开。</p>
+<h3 id="0-5-存储容量的单位"><a href="#0-5-存储容量的单位" class="headerlink" title="0.5  存储容量的单位"></a>0.5  存储容量的单位</h3><p>容量单位“TB”“GB”“MB”“KB”的关系约定如下：</p>
+<p>1 TB &#x3D; 1024 GB &#x3D; 1024 × 1024 MB &#x3D; 10243 KB &#x3D; 10244 字节</p>
+<p>例：图片的大小为1kb-10mb不等；**洲的大小大约为100GB</p>
+<h3 id="0-6-“设置”和“控制面板”"><a href="#0-6-“设置”和“控制面板”" class="headerlink" title="0.6  “设置”和“控制面板”"></a>0.6  “设置”和“控制面板”</h3><p>“设置”app 用于对系统绝大多数的选项进行调整。我们可以在开始菜单中找到一个齿轮图标的应用，点击它就可以打开“设置“</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126213043230.png" alt="image-20251126213043230"></p>
+<p>“控制面板”在win10之后就用的比较少了，大部分功能都被设置取代，只有在文中明确提到控制面板时才需要使用</p>
+<h2 id="第一章-认识你的电脑"><a href="#第一章-认识你的电脑" class="headerlink" title="第一章 认识你的电脑"></a>第一章 认识你的电脑</h2><h3 id="1-1-硬件"><a href="#1-1-硬件" class="headerlink" title="1.1 硬件"></a>1.1 硬件</h3><h4 id="1-1-1-处理器-CPU"><a href="#1-1-1-处理器-CPU" class="headerlink" title="1.1.1 处理器(CPU)"></a>1.1.1 处理器(CPU)</h4><p>中央处理器,一般叫做CPU，电脑的“脑”，作用是进行各种运算，从而实现电脑不同的功能。</p>
+<p>电脑会发热——热到需要风扇给它降温，热量中很大部分就是CPU发出来的。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126213751203.png" alt="image-20251126213751203"></p>
+<p>中美贸易战中我国被卡脖子的，就是处理器芯片。</p>
+<p>处理器很大程度上决定了电脑的性能，这台电脑流不流畅、玩游戏卡不卡、工作效率高不高</p>
+<h4 id="1-1-2-内存（RAM）"><a href="#1-1-2-内存（RAM）" class="headerlink" title="1.1.2 内存（RAM）"></a>1.1.2 内存（RAM）</h4><p>CPU只能处理数据，而这些待处理的数据，需要临时存放。内存就是用来临时存放数据的</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126213802526.png" alt="image-20251126213802526"></p>
+<p>内存的读取与写入速度也是极快的。但内存断电即丢失数据，这就是为什么办公软件需要你“保存”</p>
+<p>更多的内存意味着更多的空间来让处理器存放数据，也就意味着电脑能同时处理更多的任务，基本意味着电脑更加流畅，这就算”运行内存”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对应到手机中，内存有时称为“运行内存”，不过我们不推荐如此称呼。</span><br><span class="line">原因请参见下面“硬盘”一节</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-1-3-硬盘"><a href="#1-1-3-硬盘" class="headerlink" title="1.1.3 硬盘"></a>1.1.3 硬盘</h4><p>内存是用来临时存储数据的，而硬盘则是用来长久保存数据的。处理器从硬盘中取出数据放入内存，在内存中处理数据，处理完成之后，再将新的数据放回硬盘。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">所以黑客电影里面黑客偷的是硬盘而不是显示器（）</span><br></pre></td></tr></table></figure>
+
+<p>电脑上各种各样的软件，也是存放在硬盘里面的，卸载软件，释放的其实就是硬盘上的空间</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126214329073.png" alt="image-20251126214329073"></p>
+<p>一块硬盘的空间可以被划分成“盘”（学名叫“分区”）来更好地使用，下一章我们将向你介绍如何管理好自己硬盘上的东西</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126214535731.png" alt="image-20251126214535731"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果你在桌面上没有看到【此电脑】图标,你也可以打开文件资源管理器(随便打开一个文件夹也行），然后在左侧的导航栏中找到【此电脑】</span><br><span class="line">如果你想在桌面上显示【此电脑】图标，请打开系统设置</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126214711973.png" alt="image-20251126214711973"></p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126214723876.png" alt="image-20251126214723876"></p>
+<h4 id="1-1-4-显卡（GPU）"><a href="#1-1-4-显卡（GPU）" class="headerlink" title="1.1.4 显卡（GPU）"></a>1.1.4 显卡（GPU）</h4><p>显卡的好坏对游戏和图形相关的工作有较大影响。集成显卡，显卡和CPU在一块芯片上，价格低，性能低，能耗低；独立显卡（独显），单独的GPU显卡，价格高，性能好，能耗高</p>
+<p>如果你喜欢玩游戏（尤其是大型 3D 游戏），又或者从事视频编辑、三维设计等工作，那么独立显卡就非常需要了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">你可能在网上看到过比较高端的显卡，可以看到显卡上有大尺寸的散热风扇，这从侧面说明其功耗之大、发热之多（）</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126215219147.png" alt="image-20251126215219147"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在 AI 模型的训练和推理过程中，GPU 的并行计算能力能提供比处理器更好的性能,如果你在本地部署AI，就需要庞大的算力，甚至是高端的显卡都无法提供的，就需要更大型的实体服务器了（花费自然很高）</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-软件"><a href="#1-2-软件" class="headerlink" title="1.2 软件"></a>1.2 软件</h3><h4 id="1-2-1-软件和操作系统"><a href="#1-2-1-软件和操作系统" class="headerlink" title="1.2.1 软件和操作系统"></a>1.2.1 软件和操作系统</h4><p>可以用手机来理解：无论是我们自己安装的“QQ”“微信”“网易云音乐”，还是手机预置的“电话”“短信”，都属于“软件“。硬件是刚需，但需要软件来行使不同的具体功能</p>
+<p>而app 和纯粹的硬件之间，有一个更大，而且更“底层”的软件，称为“操作系统”</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126215706040.png" alt="image-20251126215706040"></p>
+<p>针对不同操作系统开发的软件是不能直接通用的</p>
+<p>手机操作系统有“安卓”（Android）、“iOS”以及“鸿蒙”（Harmony OS），如果你在官网上下载过app，一定会注意操作系统的不同的下载入口，这正是因为不同系统上的软件相互不兼容</p>
+<p>而在电脑上，“Windows”“Linux”及“macOS”是最常见的三种操作系统。Windows 最为普遍，几乎所有的个人电脑都运行着 Windows 系统。Linux主要在服务器上使用，一些专业人士也会在日常使用。mac是苹果开发的系统，一般在苹果品牌的设备上面才能使用</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126220024875.png" alt="image-20251126220024875"></p>
+<h3 id="1-2-2-windows操作系统"><a href="#1-2-2-windows操作系统" class="headerlink" title="1.2.2 windows操作系统"></a>1.2.2 windows操作系统</h3><p>大多数人都在使用 Windows 操作系统，本文亦是一套基于 Windows 的电脑教程。</p>
+<p>所谓“Windows XP”“Windows 7”和“Windows 11”则是 Windows 操作系统的不同版本。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">windows系统由微软microsoft开发，如果你以前有看过相关内容就会发现，我们使用的windows系统大多数都是盗版的，一部分得益于正版系统的高昂价格，一部分得益于微软的“佛系”心态，让我们都可以免费地用上与正版无异的“盗版”windows</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126220509976.png" alt="image-20251126220509976"></p>
+<p>本文假定读者使用的系统是Windows 11或者Windows 10，其中所有的操作都是基于Windows 11或者 Windows 10 简体中文版系统来描述的。</p>
+<h2 id="第二章-文件与文件管理"><a href="#第二章-文件与文件管理" class="headerlink" title="第二章 文件与文件管理"></a>第二章 文件与文件管理</h2><p>从第一章可知，硬盘是电脑中存放数据的地方，而“文件”则是数据存放的具体形式。你所撰写的 Word 文档、PowerPoint 幻灯片、从网上下载的图片和视频，乃至各个软件本身，都以文件的形式存储在硬盘上。具体介绍“文件”以及文件的管理。</p>
+<h3 id="2-1-硬盘分区"><a href="#2-1-硬盘分区" class="headerlink" title="2.1 硬盘分区"></a>2.1 硬盘分区</h3><p>双击桌面上的【此电脑】，就能打开“文件资源管理器”，简称“资源管理器”。在其中，我们可以看到一个或几个“盘”，学名叫做“分区”，顾名思义，它们是将硬盘上的空间人为地划分成了一些子空间，便于管理分类</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126220837224.png" alt="image-20251126220837224"></p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126220848920.png" alt="image-20251126220848920"></p>
+<p>分区的两个标识符，或者说“名字”<img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126220916272.png" alt="image-20251126220916272"></p>
+<p>在第一章提到，操作系统本身也是一个大软件，对于 Windows 而言，整个 Windows系统默认放在C盘里。</p>
+<p>也许你曾经听过“不要把软件安装到 C 盘”这样的说法。这是因为一方面系统在运行（也就是你使用电脑）的过程中会不断产生新文件放在c盘，剩余空间过小可能会出现爆满，影响电脑的运行；另一方面在对文件进行操作时容易误改系统文件，导致系统崩溃（蓝屏）</p>
+<p>在本文后期我们会详细介绍我们如何比较妥善地利用各个分区。</p>
+<h3 id="2-2-文件名和后缀"><a href="#2-2-文件名和后缀" class="headerlink" title="2.2 文件名和后缀"></a>2.2 文件名和后缀</h3><p>在 Windows 系统中，文件名可以分成三个部分：名称，点号，扩展名</p>
+<p>“扩展名”是指文件名中，点号之后的部分。扩展名表示文件的类型，它会告诉操作系统，这个文件应该用什么方式来打开</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126221648192.png" alt="image-20251126221648192"></p>
+<p>如果你的电脑上，文件的扩展名没有显示出来（也就是说你只能看到文件的主名），像</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126221731481.png" alt="image-20251126221731481"></p>
+<p>在 Windows 10 中请点选文件夹窗口上方的【查看】选项卡，然后勾选【文件扩展名】这一项：</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126221752208.png" alt="image-20251126221752208"></p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126221808774.png" alt="image-20251126221808774"></p>
+<p>扩展名也可以人为改变，但这样往往会出问题</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126221827979.png" alt="image-20251126221827979"></p>
+<p>“那既然这样，我不想不小心突然间改掉文件的扩展名，还不如让扩展名不显示呢。”如果你有这样的想法，那么另一重危险正悄然降临。且看下面的两个文件：</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126221900782.png" alt="image-20251126221900782"></p>
+<p>你会发现第二个文件其实是一个exe（应用程序）文件！</p>
+<p>看不到扩展名的话，指不定哪天有人发来一个这样伪装的病毒，那可就不好了（）</p>
+<h3 id="2-3-文件夹，路径和目录"><a href="#2-3-文件夹，路径和目录" class="headerlink" title="2.3 文件夹，路径和目录"></a>2.3 文件夹，路径和目录</h3><p>“文件夹”是一个用来存放其他文件的结构，可以放很多各类文件，还可以文件夹里面套文件夹套娃。因而一个文件夹的内部结构可以相当错综复杂</p>
+<p>设在 D 盘里的 missing 文件夹之中，有一个叫做 源文件 的子文件夹，在这个子文件夹中有一个文件叫 第三章.docx，我们用这种方式表示这个 第三章.docx 文件在整个电脑中的位置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\missing\源文件\第三章.docx</span><br></pre></td></tr></table></figure>
+
+<p>这就是路径</p>
+<p>也许你有听说过“目录”这个名字。其实“目录”就是文件夹。例如说“打开目录 D:\missing\public”</p>
+<p>指的就是打开 D 盘中 missing 文件夹里的 public 文件夹。</p>
+<p>目录（文件夹）一层一层的结构从上到下画出来，称作“目录树“</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126222258109.png" alt="image-20251126222258109"></p>
+<h3 id="2-4-程序本身-exe可执行文件"><a href="#2-4-程序本身-exe可执行文件" class="headerlink" title="2.4 程序本身-exe可执行文件"></a>2.4 程序本身-exe可执行文件</h3><p>类型特殊的文件——“可执行文件”</p>
+<p>比如你所撰写的Word 文档，它们都存储成了扩展名为 doc 或者 docx 的文件；你所下载的图片，它们的扩展名则往往是 jpg 、png 或者 gif 。而我们又提到，软件也是以文件的形式存储在硬盘上的。那么，软件本身，就是exe可执行文件</p>
+<p>普通的文件，需要用其他的某个软件才能正常打开；而“可执行文件”双击就能运行自身，这就是“可执行”（Executable）的意思。</p>
+<p>例如：网易云的根目录</p>
+<p>可以看到，网易云音乐有着这些文件：</p>
+<p>可执行文件 cloudmusic.exe ，这个是“网易云音乐”的主程序。</p>
+<p>可执行文件 cloudmusic_reporter.exe，cloudmusic_util.exe 等。这些文件是软件运行时的</p>
+<p>其他辅助程序。它们往往无法单独运行，而 cloudmusic.exe 这个主程序脱离它们也不能正常运行。</p>
+<p>一大堆的 dll 和其他格式的文件。这些是软件工作时不可或缺的依赖文件。</p>
+<p>一些子文件夹，存储着软件运行需要的一些资源。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126222606434.png" alt="image-20251126222606434"></p>
+<h3 id="1-5-快捷方式"><a href="#1-5-快捷方式" class="headerlink" title="1.5 快捷方式"></a>1.5 快捷方式</h3><p>你是怎么启动应用的呢？</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126222734633.png" alt="image-20251126222734633"></p>
+<p>快捷方式，也就是桌面上的图标这，都不是这个软件的本体，而是另一种称为“快捷方式”的特殊文件，打开快捷方式就相当于打开了本体。</p>
+<p>如果你删掉了这个快捷方式，它并不会影响cloudmusic.exe这个文件，不会影响你电脑上安装的网易云音乐本身</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">你可能看到过一个段子：女朋友删掉了对象电脑上的所有游戏......的快捷方式（）</span><br></pre></td></tr></table></figure>
+
+<p>一般来说，快捷方式的图标左下角会有一个“↗”符号。这个符号标志着这个文件并非某文件本身而是一个快捷方式。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126223009426.png" alt="image-20251126223009426"></p>
+<h3 id="2-6-压缩文件"><a href="#2-6-压缩文件" class="headerlink" title="2.6 压缩文件"></a>2.6 压缩文件</h3><p>可能有人给你说过“把这些文件打包发给我”，指代的就是压缩文件</p>
+<p>你可能试过，把文件夹拖到微信聊天窗口里面是无法发送的，这时候就需要压缩文件了</p>
+<p>利用“压缩工具”这种软件，将一批松散的文件和文件夹“打包”成一个压缩文件</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126223218875.png" alt="image-20251126223218875"></p>
+<p>压缩文件有很多种类，常见的有 zip 文件和 rar 文件，但后者的压缩软件是收费的5。我们建议在与他人交换文件的时候，使用zip 格式打包。</p>
+<p>当收到一个压缩文件时，我们一般需要将它解压，来还原出原始的文件。对于windows11系统，有自带的压缩工具，个人感觉日常使用就够用了，如：</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126223430853.png" alt="image-20251126223430853"></p>
+<p>选择解压到的目录后点击提取<img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126223504866.png" alt="image-20251126223504866"></p>
+<p>就可以解压了。同理，如何打包</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126223731322.png" alt="image-20251126223731322"></p>
+<p>长按鼠标左键选择多个文件<img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126223635556.png" alt="image-20251126223635556"></p>
+<p>选中文件后（本例中选择了四个表格文件）点击压缩到</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126223815890.png" alt="image-20251126223815890"></p>
+<p>就可以完成打包了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">如果我们只是想查看一个压缩文件的内容，而不把它解压，可以直接双击打开它，压缩软件会展示出其中的内容。</span><br><span class="line">双击这里面的单个文件可以临时取出这一个文件并打开它，拖拽其中的单个文件到其他地方可以只取出这一个文件而不解压整个压缩文件。</span><br><span class="line">但是，若你想运行压缩文件中的程序（可执行文件），请一定要完整解压文件，否则程序很可能无法正常工作。</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-7-文件打开方式"><a href="#2-7-文件打开方式" class="headerlink" title="2.7 文件打开方式"></a>2.7 文件打开方式</h3><p>在前文中说到，不同类型的文件需要用不同的软件来打开。对于一个特定的文件类型，打开它的软件称为它的“打开方式”。如果打开方式不对，就会出现问题。</p>
+<p>容易想到，Word 文档 doc 和 docx 文件的打开方式就是 Word 软件或者 WPS 软件；图片 jpg、png 等的打开方式就是各种看图软件；PDF 文档 pdf 的打开方式就是 PDF 阅读器</p>
+<p>系统可以自动地帮我们选择文件对应的默认打开方式，同时也是可以在设置里面更改的。有时，我们不想要帮我们预置的方式来打开文件。比如</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126224245622.png" alt="image-20251126224245622"></p>
+<h3 id="2-8-管理好你的文件"><a href="#2-8-管理好你的文件" class="headerlink" title="2.8 管理好你的文件"></a>2.8 管理好你的文件</h3><p>在硬盘设置不同的文件夹，像整理现实中的文件一样整理你自己的电脑，既可以快速找到文件，也可以节省硬盘空间。妥善利用各个分区，如果可行，尽量不把大量重要文件放在C 盘。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我的电脑桌面非常乱，感觉我没有资格说这种话（）</span><br></pre></td></tr></table></figure>
+
+<h2 id="第三章-软件的下载与安装"><a href="#第三章-软件的下载与安装" class="headerlink" title="第三章 软件的下载与安装"></a>第三章 软件的下载与安装</h2><p>软件的寻找和安装并非易事——从哪里下？怎么下？下完怎么装？装完怎么办？什么，软件要收费？破解是什么？</p>
+<p>本章对国内互联网环境下 Windows软件的下载、安装和配置做一个简单的介绍</p>
+<h3 id="3-1-安装与安装包"><a href="#3-1-安装与安装包" class="headerlink" title="3.1 安装与安装包"></a>3.1 安装与安装包</h3><p>  部分软件是通过“安装包”来安装到系统上的（一般是exe文件），就像压缩包把一大堆文件按照它们能够工作的结构，释放到我们的电脑中的指定位置。</p>
+<h3 id="3-2-寻找安装包"><a href="#3-2-寻找安装包" class="headerlink" title="3.2 寻找安装包"></a>3.2 寻找安装包</h3><h4 id="3-2-1-优先考虑官方网站"><a href="#3-2-1-优先考虑官方网站" class="headerlink" title="3.2.1 优先考虑官方网站"></a>3.2.1 优先考虑官方网站</h4><p>首先应该考虑的是它的官方网站，即“官网”，这是最最最干净的地方。</p>
+<p>然而，搜索引擎中存在大量广告，且为了吸引点击量而常常放在前面，所以搜索结果中靠前的结果并不一定是官网，就需要擦亮眼睛仔细观察。例如在百度搜WPS</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126225026762.png" alt="image-20251126225026762"></p>
+<p>图中只有4是官网，你看出来了吗？</p>
+<p>注意4的网址结尾以 .wps.cn 结尾，这是 WPS 的官方网站。其他的仔细观察网址就会发现要么是广告，要么是一些“软件下载网站”（后面会解释为什么避免这种网站）</p>
+<p>这里着重笔墨介绍一下如何鉴别一个网站到底是不是官网，我们主要可以观察这么几个地方：</p>
+<p>• 看网址。一般官网的网址都是企业或者软件的名字。例如：</p>
+<p>   – WPS 的官网是 wps.cn 。</p>
+<p>   – QQ 的官网是 qq.com 。</p>
+<p>   –  网易云音乐的官网是 163.com 。</p>
+<p>   – Steam 的官网是 steampowered.com 1。</p>
+<p>• 排除法。没有哪个软件厂商的名字是叫做“✕✕软件站”“✕✕下载站”“✕✕软件园”的。带有这些名字的<strong>全部</strong>是第三方下载站。</p>
+<p>• 语义判断。一般广告网站的标题都与搜索关键词没有任何实质上的联系。我们不妨再看上面的搜索结果中的前几条广告，会发现它们通常名不副实（如“办公软件”“Office”而非“WPS”）。</p>
+<p>当我们下载的软件是国外软件时，这一问题会变得更加严重</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126225453251.png" alt="image-20251126225453251"></p>
+<p>同样6才是对的，这就需要各位擦亮眼睛了</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126225555055.png" alt="image-20251126225555055"></p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126225602982.png" alt="image-20251126225602982"></p>
+<p>还不算完，找到真正的官网后，我们就搜索我们所需要的软件的安装包。如果软件还有“32 位”“64 位”，或者“32-bit”“64-bit”以及“x86”“x64”之分，我们还需要查看自己操作系统的类型。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">打开系统设置，选择【系统】→【系统信息】（Windows 10</span><br><span class="line">则是【关于】），在【设备规格】下找到【系统类型】一栏，然后根据下表选择合适的下载项。</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126225732960.png" alt="image-20251126225732960"></p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126225752823.png" alt="image-20251126225752823"></p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126225759835.png" alt="image-20251126225759835"></p>
+<h4 id="3-2-2-直面深渊：第三方软件站"><a href="#3-2-2-直面深渊：第三方软件站" class="headerlink" title="3.2.2 直面深渊：第三方软件站"></a>3.2.2 直面深渊：第三方软件站</h4><p>这是下载软件最危险的地方，但是如果你可以仔细辨别的话，还是可以“万花丛中过，片叶不沾身”的</p>
+<p>在某些时候，我们确实找不到一个软件的官网，或者因为这样那样的原因不能去官网下载某个软件。这时，我们将不得不直面深渊，进入各种各样的第三方下载站下载软件</p>
+<p>重点来了：进入这个网站后，**请避开所有【高速下载】【极速下载】【安全下载】【P2P 下载】**这样的按钮，并且不要点击任何广告。相反地，我们选择【普通下载】【本地下载】这样的按钮：</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126230045042.png" alt="image-20251126230045042"></p>
+<p>点击之后我们会跳转到这样一个“下载地址”的页面。同样地，我们<strong>不要点击“优先使用✕✕管家下载”之下的所有链接</strong>，而要点击**“普通下载地址”下方的【通用网络下载】**等链接：</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126230128875.png" alt="image-20251126230128875"></p>
+<p>我们使用【通用网络下载】得到的文件是一个体积约 133 MB 的压缩包符合这个软件的体量。</p>
+<p>将这个压缩包解压，我们就能得到 OBS Studio 的安装包。</p>
+<p>而使用上方所谓【安全下载】下载到的文件，体积只有 20.3 MB，而且是一个不明的“可执行文件”（exe 文件）。与前面相比，这个文件就显得很可疑了。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126230327517.png" alt="image-20251126230327517"></p>
+<p>事实上，它不是 OBS Studio 的安装包，而是一个名不见经传的“✕✕管家”的安装包。这个“管家”可能会恶意地给我们的电脑安装许多来历不明的软件，他们可能会给你电脑下载各种东西，弹出各种“一刀999”的广告，霸占你的搜索引擎，严重拖慢你的电脑的运行速度</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这种“流氓软件”非常顽固，无孔不入地侵占你的电脑，并且彻底删除它非常困难，如果碰上了要彻底根除它就要有重装系统的觉悟了（）</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2-3-另辟蹊径：软件公众号和其他小众渠道"><a href="#3-2-3-另辟蹊径：软件公众号和其他小众渠道" class="headerlink" title="3.2.3 另辟蹊径：软件公众号和其他小众渠道"></a>3.2.3 另辟蹊径：软件公众号和其他小众渠道</h4><p>另一种“另辟蹊径”的方法，是通过一些“小众渠道”，例如一些分享软件的微信公众号来下载软件。这不失为一种好方法——那些人们口口相传的优质公众号一般会把常用软件的干净安装包分门别类地整理分享。与各种“下载站”相比，它们帮我们免去了下载到恶意软件的烦恼。</p>
+<p>缺点就是这种公众号或者小众网站很难找到，此外，这些公众号一般使用各种网盘平台来分享文件，而这些网盘平台通常会对非会员用户极大限速，这必然对使用体验有一定影响。</p>
+<p>不过总的来说，这依然是一种值得推荐的方法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对于这类公众号，我们并没有做太多的收集，因此无法在此推荐。你可以在哔哩哔哩、贴吧、微博等网站自行寻路。</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2-4-第三方软件管家"><a href="#3-2-4-第三方软件管家" class="headerlink" title="3.2.4 第三方软件管家"></a>3.2.4 第三方软件管家</h4><p>第三方的“软件管家”也能帮助我们找到所需要的软件。这些软件管家有的是电脑厂商所维护的，例如“联想软件管家”“华为软件管家”；有的是一些第三方企业所维护的，比如“360 软件管家”“腾讯软件中心”等。</p>
+<p>一般来说，那些由电脑厂商所维护的软件管家，往往相对干净、不带“全家桶”式的捆绑（警惕360）</p>
+<p>缺点就是软件不全或缺少更新，一般都会或多或少地提示用户安装它们的配套软件</p>
+<h3 id="3-3-来安装文件吧"><a href="#3-3-来安装文件吧" class="headerlink" title="3.3 来安装文件吧"></a>3.3 来安装文件吧</h3><p>假设经过与各种网站的斗智斗勇，你成功地下载到了某款软件的安装包。你下载到的可能是下面三种文件中的某一种</p>
+<h4 id="3-3-1-一个光秃秃的-exe-文件或者-msi-文件。"><a href="#3-3-1-一个光秃秃的-exe-文件或者-msi-文件。" class="headerlink" title="3.3.1  一个光秃秃的 exe 文件或者 msi 文件。"></a>3.3.1  一个光秃秃的 exe 文件或者 msi 文件。</h4><p>我们直接双击这个文件就能启动安装进程</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126231153995.png" alt="image-20251126231153995"></p>
+<h4 id="3-3-2-一个压缩包，例如-zip-或-rar-文件。"><a href="#3-3-2-一个压缩包，例如-zip-或-rar-文件。" class="headerlink" title="3.3.2 一个压缩包，例如 zip 或 rar 文件。"></a>3.3.2 一个压缩包，例如 zip 或 rar 文件。</h4><p>我们需要解压缩这个压缩包到某处，然后在解压出来的文件中找到“setup.exe”“install.exe”等名字的程序双击打开。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126231220658.png" alt="image-20251126231220658"></p>
+<h4 id="3-3-3-一个扩展名是-iso-的文件。"><a href="#3-3-3-一个扩展名是-iso-的文件。" class="headerlink" title="3.3.3 一个扩展名是 iso 的文件。"></a>3.3.3 一个扩展名是 iso 的文件。</h4><p>我们右击这个 iso 文件（镜像文件），选择【打开方式】→【文件资源管理器】，然后在弹出的新窗口中找到“setup.exe”“install.exe”等名字的程序双击打开</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126231245195.png" alt="image-20251126231245195"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">至于那些“绿色版”或“便携版”软件，它们没有“安装”这一过程。要么是单单一个 exe</span><br><span class="line">文件，点开就能用；要么以压缩包形式出现，但是“开箱即用”</span><br></pre></td></tr></table></figure>
+
+<p>启动安装器后，我们一般按提示【下一步】操作即可完成安装。但是此过程中也要留心！跨过了“高速下载器”的坎，可不要又掉进了捆绑软件的坑。<strong>有一些软件在安装程序中也会像“高速下载器”一样</strong>勾选了一些捆绑软件、浏览器主页等选项**，这些选项可能出现在安装过程中的**任何阶段，一定要注意取消勾选再进行下一步。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126231426465.png" alt="image-20251126231426465"></p>
+<p>还有，安装目录的选择，不要安装在C盘。如图中更改D盘或者点击“浏览（R)”，更改到喜欢的目录就可以</p>
+<p>有一些软件的安装包不是“下一步”型的，而只有一个“立即安装”的按钮。一般这种情况，可以展开“自定义安装”之类的选项，然后更改软件的安装位置。</p>
+<p><img src="https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/image-20251126231542466.png" alt="image-20251126231542466"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">fisssssh</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/11/26/%E4%BD%A0%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E9%97%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%BE/">http://example.com/2025/11/26/%E4%BD%A0%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E9%97%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%BE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">Fisssssh-Blog</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/5f5106950234ef21e6b024e25338fcf3.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/11/23/UKY%E5%91%A8%E6%8A%A5%E4%BA%8C/" title="UKY周报二"><img class="cover" src="/img/aa1cc8a9fe7e966ca8170292e6e2ce41.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">UKY周报二</div></div><div class="info-2"><div class="info-item-1">11.3–11.9周本周复现完毕newstar2024全部题目，week4-5做下来整体感觉偏难但是5反而比4简单（），buu做了5道题，极客大挑战做了3道，学到了很多新知识点。​    ps：学的有点杂，大部分还是对之前的知识点的补充和深入了解。​     1.sql注入过滤空格就用()将内容包裹起来，如select(table_name)from(information_schema.tables)  过滤&#x3D;就用like替代，过滤by union等说明过滤了联合注入，需要采用报错注入，(extractvalue(1, concat(0x7e, (select database()))))，直接报错，并且回显到后面检测的数据库的原理继续注入​    2.文件上传类有时不会把文件自动解析成php，就需要用htaccess更改服务器配置，.htaccess被禁用可以尝试.user.ini​    3.本地文件读取，在对读取文件有长度限制，且通配符不可使用的情况下，应该采用文件描述符来读取目的文件，文件描述符是操作系统为进程维护的一个整数，每个进程有一个fd表，如&#x2F...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">fisssssh</div><div class="author-info-description">一个热爱编程与艺术的博客，分享技术见解与创意灵感。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的个人博客，探索文学与艺术的精彩世界！！！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">序</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E5%9F%BA%E7%A1%80%E7%AF%87"><span class="toc-number">2.</span> <span class="toc-text">第一部分 基础篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E9%9B%B6%E7%AB%A0-%E4%B8%80%E4%BA%9B%E7%BA%A6%E5%AE%9A%E4%B8%8E%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86"><span class="toc-number">2.1.</span> <span class="toc-text">第零章  一些约定与预备知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0-1-%E6%96%87%E4%B8%AD%E7%9A%84%E6%A0%87%E8%AE%B0%E7%AC%A6%E5%8F%B7"><span class="toc-number">2.1.1.</span> <span class="toc-text">0.1 文中的标记符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.1.2.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-2-%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.1.3.</span> <span class="toc-text">0.2 快捷键的注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-3-F1-12%E5%8A%9F%E8%83%BD%E6%8C%89%E9%94%AE"><span class="toc-number">2.1.4.</span> <span class="toc-text">0.3  F1-12功能按键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-4-%E2%80%9C%E9%87%8D%E5%90%AF%E2%80%9D%E4%B8%8D%E6%98%AF%E5%85%B3%E6%9C%BA%E5%86%8D%E5%BC%80%E6%9C%BA"><span class="toc-number">2.1.5.</span> <span class="toc-text">0.4 “重启”不是关机再开机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-5-%E5%AD%98%E5%82%A8%E5%AE%B9%E9%87%8F%E7%9A%84%E5%8D%95%E4%BD%8D"><span class="toc-number">2.1.6.</span> <span class="toc-text">0.5  存储容量的单位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-6-%E2%80%9C%E8%AE%BE%E7%BD%AE%E2%80%9D%E5%92%8C%E2%80%9C%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF%E2%80%9D"><span class="toc-number">2.1.7.</span> <span class="toc-text">0.6  “设置”和“控制面板”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%A4%E8%AF%86%E4%BD%A0%E7%9A%84%E7%94%B5%E8%84%91"><span class="toc-number">2.2.</span> <span class="toc-text">第一章 认识你的电脑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E7%A1%AC%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text">1.1 硬件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1-%E5%A4%84%E7%90%86%E5%99%A8-CPU"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">1.1.1 处理器(CPU)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2-%E5%86%85%E5%AD%98%EF%BC%88RAM%EF%BC%89"><span class="toc-number">2.2.1.2.</span> <span class="toc-text">1.1.2 内存（RAM）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3-%E7%A1%AC%E7%9B%98"><span class="toc-number">2.2.1.3.</span> <span class="toc-text">1.1.3 硬盘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-4-%E6%98%BE%E5%8D%A1%EF%BC%88GPU%EF%BC%89"><span class="toc-number">2.2.1.4.</span> <span class="toc-text">1.1.4 显卡（GPU）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E8%BD%AF%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text">1.2 软件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1-%E8%BD%AF%E4%BB%B6%E5%92%8C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">1.2.1 软件和操作系统</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">2.2.3.</span> <span class="toc-text">1.2.2 windows操作系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%96%87%E4%BB%B6%E4%B8%8E%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86"><span class="toc-number">2.3.</span> <span class="toc-text">第二章 文件与文件管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA"><span class="toc-number">2.3.1.</span> <span class="toc-text">2.1 硬盘分区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%96%87%E4%BB%B6%E5%90%8D%E5%92%8C%E5%90%8E%E7%BC%80"><span class="toc-number">2.3.2.</span> <span class="toc-text">2.2 文件名和后缀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E8%B7%AF%E5%BE%84%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="toc-number">2.3.3.</span> <span class="toc-text">2.3 文件夹，路径和目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E7%A8%8B%E5%BA%8F%E6%9C%AC%E8%BA%AB-exe%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6"><span class="toc-number">2.3.4.</span> <span class="toc-text">2.4 程序本身-exe可执行文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F"><span class="toc-number">2.3.5.</span> <span class="toc-text">1.5 快捷方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6"><span class="toc-number">2.3.6.</span> <span class="toc-text">2.6 压缩文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F"><span class="toc-number">2.3.7.</span> <span class="toc-text">2.7 文件打开方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-%E7%AE%A1%E7%90%86%E5%A5%BD%E4%BD%A0%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">2.3.8.</span> <span class="toc-text">2.8 管理好你的文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85"><span class="toc-number">2.4.</span> <span class="toc-text">第三章 软件的下载与安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%AE%89%E8%A3%85%E4%B8%8E%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-number">2.4.1.</span> <span class="toc-text">3.1 安装与安装包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%AF%BB%E6%89%BE%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-number">2.4.2.</span> <span class="toc-text">3.2 寻找安装包</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-%E4%BC%98%E5%85%88%E8%80%83%E8%99%91%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">3.2.1 优先考虑官方网站</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-%E7%9B%B4%E9%9D%A2%E6%B7%B1%E6%B8%8A%EF%BC%9A%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E7%AB%99"><span class="toc-number">2.4.2.2.</span> <span class="toc-text">3.2.2 直面深渊：第三方软件站</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-%E5%8F%A6%E8%BE%9F%E8%B9%8A%E5%BE%84%EF%BC%9A%E8%BD%AF%E4%BB%B6%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%85%B6%E4%BB%96%E5%B0%8F%E4%BC%97%E6%B8%A0%E9%81%93"><span class="toc-number">2.4.2.3.</span> <span class="toc-text">3.2.3 另辟蹊径：软件公众号和其他小众渠道</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-4-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E7%AE%A1%E5%AE%B6"><span class="toc-number">2.4.2.4.</span> <span class="toc-text">3.2.4 第三方软件管家</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E6%9D%A5%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6%E5%90%A7"><span class="toc-number">2.4.3.</span> <span class="toc-text">3.3 来安装文件吧</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-%E4%B8%80%E4%B8%AA%E5%85%89%E7%A7%83%E7%A7%83%E7%9A%84-exe-%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85-msi-%E6%96%87%E4%BB%B6%E3%80%82"><span class="toc-number">2.4.3.1.</span> <span class="toc-text">3.3.1  一个光秃秃的 exe 文件或者 msi 文件。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-%E4%B8%80%E4%B8%AA%E5%8E%8B%E7%BC%A9%E5%8C%85%EF%BC%8C%E4%BE%8B%E5%A6%82-zip-%E6%88%96-rar-%E6%96%87%E4%BB%B6%E3%80%82"><span class="toc-number">2.4.3.2.</span> <span class="toc-text">3.3.2 一个压缩包，例如 zip 或 rar 文件。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3-%E4%B8%80%E4%B8%AA%E6%89%A9%E5%B1%95%E5%90%8D%E6%98%AF-iso-%E7%9A%84%E6%96%87%E4%BB%B6%E3%80%82"><span class="toc-number">2.4.3.3.</span> <span class="toc-text">3.3.3 一个扩展名是 iso 的文件。</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/11/26/%E4%BD%A0%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E9%97%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%BE/" title="你缺失的那门计算机课"><img src="/img/5f5106950234ef21e6b024e25338fcf3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你缺失的那门计算机课"/></a><div class="content"><a class="title" href="/2025/11/26/%E4%BD%A0%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E9%97%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%BE/" title="你缺失的那门计算机课">你缺失的那门计算机课</a><time datetime="2025-11-26T15:17:14.000Z" title="发表于 2025-11-26 23:17:14">2025-11-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/23/UKY%E5%91%A8%E6%8A%A5%E4%BA%8C/" title="UKY周报二"><img src="/img/aa1cc8a9fe7e966ca8170292e6e2ce41.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UKY周报二"/></a><div class="content"><a class="title" href="/2025/11/23/UKY%E5%91%A8%E6%8A%A5%E4%BA%8C/" title="UKY周报二">UKY周报二</a><time datetime="2025-11-23T09:58:08.000Z" title="发表于 2025-11-23 17:58:08">2025-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/23/UKY%E5%91%A8%E6%8A%A5%E4%B8%80/" title="UKY周报一"><img src="/img/9ad575f9f19896781142d83c5cc85a3c.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UKY周报一"/></a><div class="content"><a class="title" href="/2025/11/23/UKY%E5%91%A8%E6%8A%A5%E4%B8%80/" title="UKY周报一">UKY周报一</a><time datetime="2025-11-23T09:26:55.000Z" title="发表于 2025-11-23 17:26:55">2025-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/23/First%20post/" title="本站第一条博客（置顶）"><img src="/img/d23a7fe8a8160e662a0f68e32f12acd1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="本站第一条博客（置顶）"/></a><div class="content"><a class="title" href="/2025/11/23/First%20post/" title="本站第一条博客（置顶）">本站第一条博客（置顶）</a><time datetime="2025-11-23T08:23:00.000Z" title="发表于 2025-11-23 16:23:00">2025-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/23/UKY%E5%91%A8%E6%8A%A5%E5%9B%9B/" title="UKY周报四"><img src="/img/dc2d63d1168acb29395d8be9e9aeaa57.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UKY周报四"/></a><div class="content"><a class="title" href="/2025/11/23/UKY%E5%91%A8%E6%8A%A5%E5%9B%9B/" title="UKY周报四">UKY周报四</a><time datetime="2025-11-23T08:23:00.000Z" title="发表于 2025-11-23 16:23:00">2025-11-23</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://bucketqiao123456.oss-cn-beijing.aliyuncs.com/377ec826784fcf748ad292817f5d9423.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By fisssssh</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><div class="js-pjax"></div><script defer src="/live2d-widget/autoload.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="/"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && location.pathname =='/'){
+    
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = 'b16a1fa0e63c46a4b8f28abfb06ae3fe';
+  var qweather_api_host = 'nj6r6pm8pt.re.qweatherapi.com';
+  var ip_api_key = 'Kq1pRjB3WyDja7rhKcWV9f5QU8';
+  var gaud_map_key = 'e2b04289e870b005374ee030148d64fd&s=rsv3';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '112.6534116,27.96920845';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
